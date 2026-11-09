@@ -1,0 +1,16 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Entorno y secretos
+.env
+.env.*
+
+# Dependencias y salidas (por si se añade un build)
+node_modules/
+dist/
+build/

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Sistema de diseño de Kivora TC: marca, color, tipografía, componentes, plataformas y voz.">
+<title>Kivora TC · Sistema de diseño</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lilita+One&family=Outfit:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mascot" viewBox="0 0 120 120">
+      <rect width="120" height="120" rx="30" fill="var(--bgc,#1c1b22)"/>
+      <path d="M26 56 L24 18 L50 36 Q60 33 70 36 L96 18 L94 56 Q98 96 60 96 Q22 96 26 56 Z" fill="var(--shadow,#6e6e78)" transform="translate(4 4)"/>
+      <path d="M26 56 L24 18 L50 36 Q60 33 70 36 L96 18 L94 56 Q98 96 60 96 Q22 96 26 56 Z" fill="var(--body,#8b6cf6)" stroke="var(--stroke,#ffffff)" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M32 44 L31 28 L44 37 Z" fill="var(--pupil,#5b3fd1)"/>
+      <path d="M88 44 L89 28 L76 37 Z" fill="var(--pupil,#5b3fd1)"/>
+      <circle cx="46" cy="60" r="9" fill="var(--eye,#ffffff)"/>
+      <circle cx="74" cy="60" r="9" fill="var(--eye,#ffffff)"/>
+      <circle cx="48" cy="61" r="4.5" fill="var(--pupil,#5b3fd1)"/>
+      <circle cx="76" cy="61" r="4.5" fill="var(--pupil,#5b3fd1)"/>
+      <path d="M56 71 Q60 68 64 71 Q62 75 60 75 Q58 75 56 71 Z" fill="var(--stroke,#ffffff)"/>
+      <path d="M60 75 Q60 80 55 80 M60 75 Q60 80 65 80" fill="none" stroke="var(--stroke,#ffffff)" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M30 72 L14 68 M30 78 L14 80 M90 72 L106 68 M90 78 L106 80" stroke="var(--stroke,#ffffff)" stroke-width="2.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.6-.8 1.6-1.6 0-.4-.2-.8-.4-1.1-.2-.3-.4-.6-.4-1 0-.9.7-1.6 1.6-1.6H17a4 4 0 0 0 4-4c0-4.4-4-7.7-9-7.7z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7.5" r="1"/><circle cx="15" cy="8" r="1"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M9 20V9"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+  </defs>
+</svg>
+
+<main class="wrap">
+  <header class="top">
+    <div class="brand"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#mascot"/></svg>Kivora TC</div>
+    <button class="toggle" id="themeBtn" type="button" aria-label="Cambiar tema">Tema: automático</button>
+  </header>
+
+  <!-- PORTADA -->
+  <div class="cover">
+    <div>
+      <h1>Sistema de <em>diseño</em></h1>
+      <p class="script">marca, color, tipo y componentes</p>
+      <p class="lead">Las reglas de Kivora TC para identidad, interfaces y desarrollo web. Cambia un token y todo el sistema se actualiza.</p>
+    </div>
+    <div class="cover-art" aria-hidden="true">
+      <svg viewBox="0 0 120 120"><use href="#mascot"/></svg>
+    </div>
+  </div>
+
+  <!-- 01 MARCA -->
+  <section id="marca">
+    <div class="sec-head"><span class="sec-num">01</span><h2>Marca</h2>
+      <p class="sec-desc">La mascota es un gato morado con orejas, bigotes y sombra desplazada. Se usa tal cual o en una de sus cuatro versiones de color.</p></div>
+    <div class="logo-stage">
+      <div class="panel logo-hero"><svg viewBox="0 0 120 120" role="img" aria-label="Mascota de Kivora TC"><use href="#mascot"/></svg></div>
+      <div>
+        <div class="variants">
+          <div class="variant" style="background:#1c1b22"><svg viewBox="0 0 120 120"><use href="#mascot"/></svg>Oscuro</div>
+          <div class="variant v-light" style="--bgc:#f4f2ff;--stroke:#3d2a8f;--body:#8b6cf6"><svg viewBox="0 0 120 120"><use href="#mascot"/></svg>Claro</div>
+          <div class="variant v-white" style="--bgc:#ffffff;--stroke:#1c1b22;--body:#8b6cf6"><svg viewBox="0 0 120 120"><use href="#mascot"/></svg>Invertido</div>
+          <div class="variant fav v-dark" style="--bgc:#1c1b22"><svg viewBox="0 0 120 120"><use href="#mascot"/></svg>Favicon 24 px</div>
+        </div>
+        <div class="rules">
+          <div class="rule"><b>1</b><span>Deja un espacio libre igual a la altura de una oreja alrededor de la mascota.</span></div>
+          <div class="rule"><b>2</b><span>No la estires ni le cambies la sombra. El contorno siempre va en blanco sobre fondo oscuro.</span></div>
+          <div class="rule"><b>3</b><span>Por debajo de 32 px usa la versión de favicon, sin texto.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 COLOR -->
+  <section id="color">
+    <div class="sec-head"><span class="sec-num">02</span><h2>Color</h2>
+      <p class="sec-desc">Morado como acento, carbón como fondo. El acento de texto en tema claro es más oscuro para mantener el contraste.</p></div>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#8b6cf6"></div><div class="meta"><strong>Acento</strong><code>#8b6cf6</code><br>Botones, iconos, barras</div></div>
+      <div class="sw"><div class="chip" style="background:#5b3fd1"></div><div class="meta"><strong>Acento oscuro</strong><code>#5b3fd1</code><br>Sombras y texto claro</div></div>
+      <div class="sw"><div class="chip" style="background:#1c1b22"></div><div class="meta"><strong>Carbón</strong><code>#1c1b22</code><br>Fondo en tema oscuro</div></div>
+      <div class="sw"><div class="chip" style="background:#6e6e78"></div><div class="meta"><strong>Sombra gris</strong><code>#6e6e78</code><br>Sombra desplazada del logo</div></div>
+      <div class="sw"><div class="chip" style="background:#f4f2ff"></div><div class="meta"><strong>Lavanda</strong><code>#f4f2ff</code><br>Fondo en tema claro</div></div>
+      <div class="sw"><div class="chip" style="background:#6fe3a4"></div><div class="meta"><strong>Éxito</strong><code>#6fe3a4</code><br>Estados publicados</div></div>
+    </div>
+  </section>
+
+  <!-- 03 TIPO -->
+  <section id="tipo">
+    <div class="sec-head"><span class="sec-num">03</span><h2>Tipografía</h2>
+      <p class="sec-desc">Tres familias con un papel cada una. Lilita One da carácter a los titulares, Outfit sostiene el texto y Caveat se usa solo para notas cortas.</p></div>
+    <div class="type-grid">
+      <div class="type-card">
+        <h3>Titular · Lilita One</h3>
+        <div class="tf-head">HECHO PARA LA WEB</div>
+        <p class="spec">Solo para títulos y cifras grandes. Sin negritas, letra con brillo propio.</p>
+      </div>
+      <div class="type-card">
+        <h3>Texto · Outfit</h3>
+        <div class="tf-body">Identidad, interfaces y web, de la idea al sitio publicado. <small>Cuerpo 16 px, interlineado 1.55.</small></div>
+        <p class="spec">Pesos 400, 500 y 700. Los números en tablas usan cifras tabulares.</p>
+      </div>
+      <div class="type-card">
+        <h3>Nota · Caveat</h3>
+        <div class="tf-script">de la primera idea al sitio publicado</div>
+        <p class="spec">Etiquetas de sección y comentarios. Nunca en párrafos de más de una línea.</p>
+      </div>
+      <div class="type-card">
+        <h3>Escala</h3>
+        <div class="scale">
+          <div><span>Titular de portada</span><span style="font-family:var(--font-head);font-size:40px;line-height:1">92 px</span></div>
+          <div><span>Titular de sección</span><span style="font-family:var(--font-head);font-size:30px;line-height:1">44 px</span></div>
+          <div><span>Título de tarjeta</span><span style="font-family:var(--font-head);font-size:22px;line-height:1">22 px</span></div>
+          <div><span>Texto</span><span style="font-size:16px">16 px</span></div>
+          <div><span>Etiqueta</span><span style="font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase">13 px</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 COMPONENTES -->
+  <section id="componentes">
+    <div class="sec-head"><span class="sec-num">04</span><h2>Componentes</h2>
+      <p class="sec-desc">Piezas básicas. Todas usan los mismos tokens, así que cambian juntas cuando cambia la marca.</p></div>
+    <div class="comp-grid">
+      <div class="panel">
+        <h3>Botones</h3>
+        <div class="row">
+          <button class="btn btn-primary" type="button">Primario</button>
+          <button class="btn btn-outline" type="button">Secundario</button>
+        </div>
+        <div class="row" style="margin-top:14px"><button class="btn btn-primary btn-sm" type="button">Pequeño</button></div>
+      </div>
+      <div class="panel">
+        <h3>Estados</h3>
+        <div class="row">
+          <span class="tag">Marca</span><span class="tag ok">Publicado</span>
+          <span class="tag warn">En progreso</span><span class="tag danger">Bloqueado</span>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Campo</h3>
+        <label class="label" for="mail">Correo de contacto</label>
+        <input class="field" id="mail" type="email" placeholder="tu@correo.com">
+      </div>
+      <div class="panel">
+        <h3>Interruptor y progreso</h3>
+        <div class="row" style="justify-content:space-between">
+          <button class="switch" id="sw" role="switch" aria-checked="false" aria-label="Activar avisos" type="button"></button>
+          <span id="swLabel" style="color:var(--muted);font-size:14px">Apagado</span>
+        </div>
+        <div style="margin-top:20px"><span class="label">Proyecto en curso · 68 %</span><div class="progress" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"><div style="--w:68%"></div></div></div>
+      </div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-palette"/></svg></div><h4>Identidad</h4><p>Logo, paleta y tipografía coherentes en cada punto de contacto.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-layout"/></svg></div><h4>Interfaces</h4><p>Pantallas claras, con jerarquía visual y piezas reutilizables.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-bolt"/></svg></div><h4>Desarrollo web</h4><p>Sitios rápidos, accesibles y listos para publicar.</p></div>
+    </div>
+  </section>
+
+  <!-- 05 PLATAFORMAS -->
+  <section id="plataformas">
+    <div class="sec-head"><span class="sec-num">05</span><h2>Plataformas</h2>
+      <p class="sec-desc">Cuatro superficies con los mismos componentes. Cambia la disposición, no el lenguaje visual.</p></div>
+
+    <div class="plat">
+      <!-- Web -->
+      <div class="plat-block">
+        <div class="plat-top"><span class="pill">Web</span><span class="note">un sitio, una promesa clara</span></div>
+        <div class="frame">
+          <div class="frame-bar"><div class="dots"><i></i><i></i><i></i></div><div class="url">kivora.tc</div></div>
+          <div class="web-nav">
+            <svg width="28" height="28" viewBox="0 0 120 120" aria-hidden="true"><use href="#mascot"/></svg>
+            <div class="links"><span>Sobre mí</span><span>Servicios</span><span>Proyectos</span><span>Contacto</span></div>
+          </div>
+          <div class="web-hero">
+            <div>
+              <h5>HECHO PARA <span>LA WEB</span></h5>
+              <p>Identidad, interfaces y web, de la idea al sitio publicado.</p>
+              <div class="row"><button class="btn btn-primary btn-sm" type="button">Ver proyectos</button><button class="btn btn-outline btn-sm" type="button">Contactar</button></div>
+            </div>
+            <div class="web-art" aria-hidden="true">
+              <div class="blob" style="width:38%;aspect-ratio:1;left:12%;top:18%"></div>
+              <div class="blob b2" style="width:24%;aspect-ratio:1;right:14%;top:22%"></div>
+              <div class="blob" style="width:56%;height:14%;border-radius:40px;left:30%;bottom:14px;background:var(--accent)"></div>
+            </div>
+          </div>
+          <div class="web-cards">
+            <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-palette"/></svg></div><h4>Marca</h4><p>Logo y sistema visual.</p></div>
+            <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-layout"/></svg></div><h4>Interfaces</h4><p>Apps y paneles.</p></div>
+            <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><use href="#i-bolt"/></svg></div><h4>Web</h4><p>Sitios rápidos.</p></div>
+          </div>
+        </div>
+        <p class="plat-spec">Navegación arriba, una promesa en titular y tres tarjetas de servicio. Máximo tres tarjetas por fila.</p>
+      </div>
+
+      <!-- Desktop -->
+      <div class="plat-block">
+        <div class="plat-top"><span class="pill">Desktop</span><span class="note">el panel de trabajo diario</span></div>
+        <div class="frame window">
+          <div class="win-bar">
+            <div class="traffic" aria-hidden="true"><i style="background:#ff6b8a"></i><i style="background:#ffd166"></i><i style="background:#6fe3a4"></i></div>
+            Proyectos — Kivora TC
+          </div>
+          <aside class="side" aria-label="Navegación">
+            <a class="on" href="#plataformas">Proyectos</a>
+            <a href="#plataformas">Clientes</a>
+            <a href="#plataformas">Facturas</a>
+            <a href="#plataformas">Ajustes</a>
+          </aside>
+          <div class="win-main">
+            <div class="stats">
+              <div class="stat"><small>Activos</small><b>7</b></div>
+              <div class="stat"><small>Entregados</small><b>23</b></div>
+              <div class="stat"><small>Horas</small><b>142</b></div>
+            </div>
+            <div class="chart" aria-hidden="true">
+              <div class="bar" style="height:40%"></div><div class="bar" style="height:70%"></div>
+              <div class="bar" style="height:55%"></div><div class="bar" style="height:90%"></div>
+              <div class="bar" style="height:65%"></div>
+            </div>
+            <div class="list-row">
+              <div><strong>Landing Kivora</strong><small>Diseño web · 15 nov</small></div>
+              <span class="tag ok">Publicado</span>
+            </div>
+            <div class="list-row">
+              <div><strong>Rebranding café</strong><small>Identidad · 28 nov</small></div>
+              <span class="tag warn">En progreso</span>
+            </div>
+            <div class="list-row">
+              <div style="flex:1;min-width:160px"><strong>App de reservas</strong><div class="progress" style="margin-top:8px"><div style="--w:45%"></div></div></div>
+              <button class="btn btn-primary btn-sm" type="button">Abrir</button>
+            </div>
+          </div>
+        </div>
+        <p class="plat-spec">Barra lateral fija, tres métricas arriba y una lista de proyectos con estado en la misma posición en cada fila.</p>
+      </div>
+
+      <!-- Móvil y CLI -->
+      <div class="plat-pair">
+        <div class="plat-block">
+          <div class="plat-top"><span class="pill">Mobile</span><span class="note">pulgar primero</span></div>
+          <div class="phone" aria-label="Vista móvil">
+            <div class="phone-head">Hola, Kivora <div class="avatar" aria-hidden="true">M</div></div>
+            <div class="m-card"><h4>Landing Kivora</h4><p>Diseño web · 15 nov</p><span class="tag ok">Publicado</span></div>
+            <div class="m-card"><h4>Rebranding café</h4><p>Identidad · En progreso</p><div class="progress"><div style="--w:60%"></div></div></div>
+            <div class="m-row"><span>Avisos</span><button class="switch" role="switch" aria-checked="true" aria-label="Avisos" type="button" style="border-color:var(--accent-fill);background:var(--accent-fill)"></button></div>
+            <button class="btn btn-primary" type="button" style="width:100%">Nuevo proyecto</button>
+            <div class="tabbar" role="tablist">
+              <button role="tab" aria-selected="true" data-tab="Inicio">Inicio</button>
+              <button role="tab" aria-selected="false" data-tab="Proyectos">Proyectos</button>
+              <button role="tab" aria-selected="false" data-tab="Perfil">Perfil</button>
+            </div>
+          </div>
+          <p class="plat-spec">Tarjetas apiladas y navegación inferior, con áreas de toque de 44 px o más.</p>
+        </div>
+
+        <div class="plat-block">
+          <div class="plat-top"><span class="pill">CLI</span><span class="note">mismos tokens, en texto</span></div>
+          <div class="term">
+            <div class="term-head"><span>kivora — zsh</span><button class="btn btn-outline btn-sm" id="copyBtn" type="button">Copiar comando</button></div>
+            <pre><span class="p">~/proyectos</span> <span class="dim">$</span> kivora init landing
+<span class="ok">✔</span> Estructura de componentes creada
+<span class="ok">✔</span> Tokens cargados desde <span class="warn">tokens.json</span>
+<span class="dim">$</span> kivora publish --web
+<span class="ok">✔</span> Build listo en 1.2s  <span class="dim">→ dist/index.html</span></pre>
+          </div>
+          <p class="plat-spec">Mismos colores de estado en texto: verde para éxito, amarillo para aviso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 VOZ -->
+  <section id="voz">
+    <div class="sec-head"><span class="sec-num">06</span><h2>Voz</h2>
+      <p class="sec-desc">Hablamos claro y en activo. Un control dice lo que hace.</p></div>
+    <div class="voice">
+      <div class="say"><div class="no">Procesar la solicitud de publicación</div><div class="yes">Publicar</div></div>
+      <div class="say"><div class="no">Error de conexión (código 503)</div><div class="yes">No pudimos guardar. Revisa tu conexión e inténtalo otra vez.</div></div>
+      <div class="say"><div class="no">Potencia tu flujo creativo</div><div class="yes">Crea tu primera página en dos minutos.</div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap" style="padding-block:26px 0">
+  <span>© Kivora TC · Sistema de diseño</span>
+  <span>Web · Desktop · Mobile · CLI</span>
+</footer>
+
+<script src="js/main.js"></script>
+
